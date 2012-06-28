@@ -1,6 +1,12 @@
 // Set the correct sprite paths
-$iconSpritePath: asset-url('glyphicons-halflings.png', image);
-$iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
 @import "bootstrap";
 body { padding-top: 60px; }
 @import "bootstrap-responsive";
+
+/****************************************************************************/
+/* Navbar
+/****************************************************************************/
+.navbar .brand {
+  background: image-url("rails.png") 8px 50% no-repeat;
+  padding-left: 40px;
+}
