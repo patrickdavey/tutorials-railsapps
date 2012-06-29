@@ -14,3 +14,18 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+$(document).ready(function() {
+    $('#hobo').click(function() {
+        _gaq.push(['_trackEvent', 'subscription', 'click', 'hobo']);
+    });
+    $('#student').click(function() {
+        _gaq.push(['_trackEvent', 'subscription', 'click', 'student']);
+    });
+    $('#pro').click(function() {
+        _gaq.push(['_trackEvent', 'subscription', 'click', 'pro']);
+    });
+    $('#team').click(function() {
+        _gaq.push(['_trackEvent', 'subscription', 'click', 'team']);
+    });
+});
