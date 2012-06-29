@@ -1,0 +1,58 @@
+
+/****************************************************************************/
+/* CSS overrides used for the squeeze page
+/****************************************************************************/
+.navbar .brand {
+  background: image-url("rails.png") 8px 50% no-repeat;
+  padding-left: 40px;
+}
+
+.hero-unit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.flex {
+  width: 140px;
+  float: left;
+  margin-left: 20px;
+}
+
+.pull-center {margin: 0 auto; text-align:center;}
+
+.thumbnail {
+  
+  border: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 0px 0px;
+  -moz-box-shadow: 0 0px 0px;
+  box-shadow: 0 0px 0px;
+  
+  img {
+    float: left;
+  }
+  p {
+    font-size: 12px;
+    text-align: left;
+    line-height: 14px;
+    margin-left: 44px;
+    margin-bottom: 0px;
+  }
+}
+
+#subscription {
+  // display: none;
+}
+
+#tutorial-list {
+  li {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  p {
+    margin-top: 4px;
+    font-size: 16px;
+  }
+}
