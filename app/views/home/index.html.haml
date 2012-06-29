@@ -1,63 +1,115 @@
-#welcome
-  .hero-unit
-    %h1 
-      %img{:alt => "Rails Application for a Startup Prelaunch Signup Site", :height => "100", :src => "http://railsapps.github.com/images/tutorial.png", :title => "Rails Application for a Startup Prelaunch Signup Site", :width => "120"}/
-      The tutorials.
+#subscription.modal.hide
+  .modal-header
+    %a.close{"data-dismiss" => "modal"} &#215;
+    %h3 No Subscription Required
+  .modal-body
     %p
-      Your purchase of a tutorial
-      %br
-        supports ongoing development.
+      %span.label.label-success 
+        ALL TUTORIALS FREE TODAY!
+    #tutorial-list
+      %h4 Premium
+      %ul.unstyled
+        %li 
+          %a{:href => "http://railsapps.github.com/tutorial-rails-bootstrap-devise-cancan.html"} Twitter Bootstrap, Devise, CanCan
+        %li 
+          %a{:href => "http://railsapps.github.com/tutorial-rails-prelaunch-signup.html"} Startup Prelaunch Signup App
+      %h4 Basic
+      %ul.unstyled
+        %li 
+          %a{:href => "http://railsapps.github.com/tutorial-rails-devise-rspec-cucumber.html"} Devise, RSpec, Cucumber
+        %li
+          %a{:href => "http://railsapps.github.com/tutorial-rails-mongoid-devise.html"} Devise, Mongoid
+        %li
+          %a{:href => "http://railsapps.github.com/tutorial-rails-mongoid-omniauth.html"} OmniAuth, Mongoid
+        %li
+          %a{:href => "http://railsapps.github.com/tutorial-rails-subdomains.html"} Subdomains
+      %p
+        Click a link to any tutorial for instant access.
+  .modal-footer
+    %a.btn{"data-dismiss" => "modal", :href => "#"} Close
 
-#premium
-  .row.well
-    %table.table
-      %tr
-        %th Example App
-        %th Tutorial
-        %th Comments
-      %tr
-        %td
-          %a{:href => "http://railsapps.github.com/rails-prelaunch-signup/"} Startup Prelaunch Signup App
-        %td
-          %a{:href => "http://railsapps.github.com/tutorial-rails-prelaunch-signup.html"} Tutorial
-        %td For a startup prelaunch signup site
-      %tr
-        %td
-          %a{:href => "https://github.com/RailsApps/rails3-bootstrap-devise-cancan"} Twitter Bootstrap, Devise, CanCan
-        %td
-          %a{:href => "http://railsapps.github.com/tutorial-rails-bootstrap-devise-cancan.html"} Tutorial
-        %td
-          Devise for authentication, CanCan for authorization, Twitter Bootstrap for
-          %span.caps CSS
+#welcome.hero-unit
+  %h1 
+    %img{:alt => "Rails Application for a Startup Prelaunch Signup Site", :height => "100", :src => "http://railsapps.github.com/images/tutorial.png", :title => "Rails Application for a Startup Prelaunch Signup Site", :width => "120"}/
+    The tutorials.
+  %p
+    Your membership subscription
+    %br
+      supports ongoing development.
+      
+  %ul.thumbnails.pull-center
+    %li.span3
+      .thumbnail
+        %img{:height => "40", :width => "40", :alt => "Simon", :src => "http://a0.twimg.com/profile_images/1299866823/me_normal"}
+        %p One of the best resources for Rails developers, tons of useful tutorials, advice, best practices... Thank you!
+    %li.span3
+      .thumbnail
+        %img{:height => "40", :width => "40", :alt => "Daniel May", :src => "http://a0.twimg.com/profile_images/1299379352/dmay_normal.jpg"}
+        %p @rails_apps Awesome tutorials covering #rails, #mongoid, #devise. Keep up the great work & even do more?
+    %li.span3
+      .thumbnail
+        %img{:height => "40", :width => "40", :alt => "Jordan Burke", :src => "http://a0.twimg.com/profile_images/1633972767/IMG_0426-1__1__normal.JPG"}
+        %p Big thanks to @rails_apps for providing some great RoR starter apps and tutorials.
+                      
+#price-table-wrapper.row
+  #price-table.span12.offset1
+    .flex.well.pricehover
+      .price
+        %h2 Hobo
+      %ul.unstyled.pricing.animated.fadeIn
+        %li Access to Basic Tutorials
+        %li Single User
+        %li No Membership
+      %h3 FREE
+      %button.btn.btn-success{"data-toggle" => "modal", :href => "#subscription"} Subscribe
+    .flex.well.pricehover
+      .price
+        %h2 Student
+      %ul.unstyled.pricing.animated.fadeIn
+        %li Access to Basic + Premium Tutorials
+        %li Single User
+        %li Annual Membership
+      %h3 $12
+      %button.btn.btn-success{"data-toggle" => "modal", :href => "#subscription"} Subscribe
+    .flex.well.pricehover.featured
+      .price.featuredprice
+        %h2 Pro
+      %ul.unstyled.pricing.animated.fadeIn
+        %li Access to Basic + Premium Tutorials
+        %li Single User
+        %li Monthly Membership
+      %h3 $9
+      %button.btn.btn-success{"data-toggle" => "modal", :href => "#subscription"} Subscribe
+    .flex.well.pricehover
+      .price
+        %h2 Team
+      %ul.unstyled.pricing.animated.fadeIn
+        %li Access to Basic + Premium Tutorials
+        %li Multiple Users
+        %li Annual Membership
+      %h3 $179
+      %button.btn.btn-success{"data-toggle" => "modal", :href => "#subscription"} Subscribe
+
+#tutorials.well.span10
+  .span4.offset1
+    %h4 Basic Tutorials
+    %dl
+      %dt Authentication and Testing with SQL
+      %dd Devise for user management with RSpec and Cucumber for testing and behavior-driven development (BDD). ActiveRecord with SQLite database.
+      %dt Authentication and Testing with NoSQL
+      %dd Devise plus RSpec and Cucumber for testing and BDD. Mongoid with MongoDB datastore.
+      %dt OmniAuth Authentication with NoSQL
+      %dd Authentication using OmniAuth with a service provider such as Twitter or Facebook. RSpec and Cucumber for testing and BDD. Mongoid with MongoDB datastore.
+      %dt Subdomains with NoSQL 
+      %dd Basecamp-style subdomains combined with Devise for user management plus RSpec and Cucumber for testing. Mongoid with MongoDB datastore.
+  .span4
+    %h4 Premium Tutorials
+    %dl
+      %dt Authentication with Authorization plus Twitter Bootstrap
+      %dd Devise for user management with CanCan for an administrative dashboard plus Twitter Bootstrap for design.
+      %dt Web Startup Prelaunch Site
+      %dd Full-featured application to register visitors who wish to be notified when a site is launched. Includes Twitter Boostrap modal windows, integration with MailChimp for broadcast email, administrative dashboard with "invite" feature, and much more.
+
         
-#freebies
-  .row.well
-    %table.table
-      %tr
-        %th Example App
-        %th Tutorial
-        %th Comments
-      %tr
-        %td
-          %a{:href => "https://github.com/RailsApps/rails3-devise-rspec-cucumber"} Devise, RSpec, Cucumber
-        %td
-          %a{:href => "http://railsapps.github.com/tutorial-rails-devise-rspec-cucumber.html"} Free Tutorial
-        %td Devise for authentication with ActiveRecord and SQLite for a database
-      %tr
-        %td
-          %a{:href => "https://github.com/RailsApps/rails3-mongoid-devise"} Devise, Mongoid
-        %td
-          %a{:href => "http://railsapps.github.com/tutorial-rails-mongoid-devise.html"} Free Tutorial
-        %td Devise for authentication with a MongoDB datastore
-      %tr
-        %td
-          %a{:href => "https://github.com/RailsApps/rails3-mongoid-omniauth"} OmniAuth, Mongoid
-        %td
-          %a{:href => "http://railsapps.github.com/tutorial-rails-mongoid-omniauth.html"} Free Tutorial
-        %td OmniAuth for authentication with a MongoDB datastore
-      %tr
-        %td
-          %a{:href => "https://github.com/RailsApps/rails3-subdomains"} Subdomains, Devise, Mongoid
-        %td
-          %a{:href => "http://railsapps.github.com/tutorial-rails-subdomains.html"} Free Tutorial
-        %td Basecamp-style subdomains with Devise and MongoDB
+
+    
