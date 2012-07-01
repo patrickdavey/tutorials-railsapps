@@ -18,7 +18,13 @@
   margin-left: 20px;
 }
 
-.pull-center {margin: 0 auto; text-align:center;}
+.pull-center {
+  margin: 0 auto; text-align:center;
+}
+
+.highlight {
+  color: #51A351;
+}
 
 .thumbnail {
   
@@ -42,11 +48,7 @@
   }
 }
 
-#subscription {
-  // display: none;
-}
-
-#tutorial-list {
+.tutorial-list {
   li {
     font-size: 16px;
     margin-bottom: 4px;
