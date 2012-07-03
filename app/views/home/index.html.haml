@@ -78,7 +78,7 @@
         %p Big thanks to @rails_apps for providing some great RoR starter apps and tutorials.
 
 #featured.span10.offset1.well
-  .ribbon
+  .ribbon-featured
     %a{:href => "#"} 
       FEATURED
       %br TUTORIAL
@@ -124,14 +124,19 @@
       .price
         %h2 Team
       %ul.unstyled.pricing.animated.fadeIn
-        %li Access to Basic + Premium Tutorials
+        %li All the Benefits of Pro... for Your Entire Team
         %li Multiple Users
         %li Annual Membership
       %h3 $179
       %button.btn.btn-success{"data-toggle" => "modal", :href => "#subscription", :id => "team"} Subscribe
 
 #tutorials.well.span10
-  .span4.offset1
+  .span1
+    .ribbon-tutorials
+      %a{:href => "#"} 
+        GO PRO!
+        %br GET ALL THIS
+  .span4
     %h4 Basic Tutorials
     %dl
       %dt Authentication and Testing with SQL
