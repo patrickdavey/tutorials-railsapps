@@ -16,14 +16,14 @@
           %a{:href => "http://railsapps.github.com/tutorial-rails-subdomains.html"} Subdomains
     %p
       %span.label.label-warning 
-        UPGRADE FOR ACCESS
+        MEMBERSHIP REQUIRED
     .tutorial-list
       %h4 Premium Tutorials
       %ul
         %li 
-          %a{:href => "http://railsapps.github.com/tutorial-rails-bootstrap-devise-cancan.html"} Twitter Bootstrap, Devise, CanCan
+          %a{"data-dismiss" => "modal", :href => "#"} Twitter Bootstrap, Devise, CanCan
         %li 
-          %a{:href => "http://railsapps.github.com/tutorial-rails-bootstrap-devise-cancan.html"} Startup Prelaunch Signup App
+          %a{"data-dismiss" => "modal", :href => "#"} Startup Prelaunch Signup App
   .modal-footer
     %a.btn{"data-dismiss" => "modal", :href => "#"} Close
 
@@ -58,10 +58,6 @@
   %h1 
     %img{:alt => "Rails Application for a Startup Prelaunch Signup Site", :height => "100", :src => "http://railsapps.github.com/images/tutorial.png", :title => "Rails Application for a Startup Prelaunch Signup Site", :width => "120"}/
     The tutorials.
-  %p
-    Your tutorial subscription
-    %br
-      supports ongoing development.
       
   %ul.thumbnails.pull-center
     %li.span3
@@ -84,11 +80,12 @@
       %br TUTORIAL
   %h2 Devise with CanCan and Twitter Bootstrap
   %p
-    Rails 3.2 example application shows how to use Devise with CanCan and Twitter Bootstrap.
+    Ruby on Rails tutorial shows how to use Devise with CanCan and Twitter Bootstrap.
   %ul
     %li Devise gives you ready-made authentication and user management.
     %li CanCan provides authorization for administrator access.
-    %li Twitter Bootstrap is a front-end framework for CSS styling.
+    %li Twitter Bootstrap is a popular front-end framework for CSS styling.
+    %li RSpec and Cucumber integrated for testing and BDD.
 
                       
 #price-table-wrapper.row
@@ -151,9 +148,7 @@
     %h4 Premium Tutorials
     %dl
       %dt Authentication with Authorization plus Twitter Bootstrap
-      %dd.highlight
-        %span.highlight
-          Devise for user management with CanCan for an administrative dashboard plus Twitter Bootstrap for design.
+      %dd Devise for user management with CanCan for an administrative dashboard plus Twitter Bootstrap for design.
       %dt Web Startup Prelaunch Site
       %dd Full-featured application to register visitors who wish to be notified when a site is launched. Includes Twitter Boostrap modal windows, integration with MailChimp for broadcast email, administrative dashboard with "invite" feature, and much more.
 
